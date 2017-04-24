@@ -1,0 +1,19 @@
+@font-face {
+font-family: Siruca; src: url('fonts/Siruca.ttf');
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Siruca; src: url('fonts/Siruca.ttf');
+}
+
+a {
+  color: #6173f4;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+a:hover, a:active, a:focus {
+  color: #6173f4;
+  outline: none;
+}
