@@ -1,27 +1,124 @@
-@font-face {
-font-family: Siruca; src: url('fonts/Siruca.ttf');
+body{
+	background-color: #04122C;
+	font-family: sans-serif;
+}
+main{
+	height:3000px;
+}
+header{
+	position:absolute;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: Siruca; src: url('fonts/Siruca.ttf');
+header img{
+	width:200px;
+}
+.circle{
+	color: white;
+	position:absolute;
+	//background-color: rgba(255, 0 , 0 , 0.6);
+	border: 2px solid #9BFFFF;
+}
+.first{
+	left: 50%;
+    margin-left: -325px;
+    margin-top: 40px;
+    width: 600px;
+    height: 600px;
+    border-radius: 625px;
+    padding: 50px;
+    text-align: center;
+    font-size: 40px;
 }
 
-a {
-  color: #6173f4;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+.first h1{
+	font-weight: normal;
+    margin-top: 130px;
+    font-size: 115px;
+    margin-bottom: 12px;
 }
 
-a:hover, a:active, a:focus {
-  color: #6173f4;
-  outline: none;
+.first p{
+    position: relative;
+    width: 80%;
+    margin: auto;
 }
 
-.testbg{
-	background-image: url(../img/devtest1.jpg);
-	overflow: hidden;
-	background-size: cover;
-	height: 2600px;
-	width: 100%;
+.second{
+	width: 350px;
+	height: 350px;
+	border-radius: 350px;
+	right: 6%;
+	margin-top: 340px;
+}
+
+.second p{
+	font-size: 31px;
+	text-align: center;
+	margin: 109px auto;
+	width: 93%;
+}
+
+.third{
+	width: 400px;
+	height: 400px;
+	border-radius: 400px;
+	left: 20%;
+	top: 970px;
+}
+
+.third h1{
+	font-size: 50px;
+	font-weight: normal;
+	text-align: center;
+	width: 67%;
+	margin: 70px auto;
+	padding: 0;
+}
+
+.fourth{
+	width:750px;
+	height:750px;
+	border-radius: 750px;
+	top:900px;
+	right:7%;
+	text-align:center;
+}
+
+.fourth h2{
+	font-size:50px;
+	margin: 100px auto 0;
+	width:60%;
+	font-weight: normal;
+}
+
+.fourth p{
+	font-size:33px;
+	margin:75px auto;
+
+}
+
+.fifth{
+	width: 750px;
+	height: 750px;
+	border-radius: 750px;
+	top: 1370px;
+	margin-left: -150px;
+	text-align: center;
+}
+
+.sixth{
+	overflow:hidden;
+	width: 750px;
+	height: 750px;
+	border-radius: 750px;
+	top: 1970px;
+	right: 27%;
+	text-align: center;
+}
+
+.sixth h2{
+	font-size: 55px;
+	font-weight: normal;
+	width:72%;
+	margin: 120px auto;
 }
