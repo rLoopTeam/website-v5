@@ -3,14 +3,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: #6173f4;
+  color: #4FDEEF;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 
 a:hover, a:active, a:focus {
-  color: #6173f4;
+  color: #4FDEEF;
   outline: none;
 }
 
@@ -19,5 +19,5 @@ a:hover, a:active, a:focus {
 	overflow: hidden;
 	background-size: cover;
 	height: 2600px;
-	width: 100%;
+	max-width: 100%;
 }
