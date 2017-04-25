@@ -17,3 +17,11 @@ a:hover, a:active, a:focus {
   color: #6173f4;
   outline: none;
 }
+
+.testbg{
+	background-image: url(../img/devtest1.jpg);
+	overflow: hidden;
+	background-size: cover;
+	height: 2600px;
+	width: 100%;
+}
