@@ -65,4 +65,16 @@ document.addEventListener("DOMContentLoaded", function(){
     		document.getElementById("seventhLine").classList.add("expand");	
     	}
     });
+    sr.reveal('.eighth', {
+    	viewFactor: 0.5,
+    	delay: 2000,
+    	beforeReveal: function(){
+    		document.getElementById("eighthLine").classList.add("expand");
+    		document.getElementById("ninethLine").classList.add("expand");
+    	}
+    });
+    sr.reveal('.conclusion',{
+    	viewFactor:0.5,
+    	delay:3000
+    });
 });
