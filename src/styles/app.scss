@@ -1,19 +1,22 @@
 body{
 	background-color: #04122C;
-	font-family: sans-serif;
+	font-family: 'Roboto Slab', sans-serif;
 	color : white;
 }
-
+pre{
+	font-family: 'Roboto Slab', sans-serif !important;
+	margin:0;
+}
 main{
 	
 	height:4000px;
 	//developing pourposes
-	/*
+	
     background-repeat: no-repeat;
     background-image: url(../img/test.png);
     background-size: 105%;
     background-position: -50px -30px;
-    */
+    
 }
 header{
 	position:absolute;
@@ -143,17 +146,15 @@ header img{
 	border-radius: 625px;
 	padding: 50px;
 	text-align: center;
-	font-size: 40px;
 	h1{
 		font-weight: normal;
-		margin-top: 130px;
-		font-size: 115px;
-		margin-bottom: 12px;
+		margin-top: 5vw;
+		font-size: 6.3vw;
+		margin-bottom:0;
 	}
-	p{
-		position: relative;
-		width: 80%;
-		margin: auto;
+	pre{
+		margin: 1vw 0;
+		font-size: 2vw;
 	}
 }
 
@@ -164,11 +165,11 @@ header img{
 	right: 145px;
 	top: 401px;
 
-	p{
-		font-size: 31px;
+	pre{
+		font-size: 1.5vw;
 		text-align: center;
-		margin: 109px auto;
-		width: 93%;
+		margin: 5vw auto;
+		line-height: 1.8vw;
 	}
 }
 
@@ -180,12 +181,13 @@ header img{
 	top: 1012px;
 
 	h1{
-		font-size: 50px;
+		font-size: 2.7vw;
 		font-weight: normal;
 		text-align: center;
-		width: 67%;
-		margin: 70px auto;
+		width: 13vw;
+		margin: 4vw auto;
 		padding: 0;
+		line-height: 3vw;
 	}
 }
 
@@ -198,15 +200,16 @@ header img{
 	text-align: center;
 
 	h2{
-		font-size:50px;
+		font-size: 2.5vw;
 		margin: 150px auto 0;
-		width:60%;
+		width: 23vw;
 		font-weight: normal;
 	}
 
-	p{
-		font-size:33px;
-		margin:45px auto;
+	pre{
+		font-size: 2.3vw;
+		margin: 1vw auto;
+		line-height: 2.3vw;
 	}
 }
 
@@ -226,11 +229,9 @@ header img{
 	top: 1920px;
     right: 365px;
 	text-align: center;
-	h2{
-		font-size: 55px;
-		font-weight: normal;
-		width:72%;
-		margin: 120px auto;
+	pre{
+		font-size: 2.7vw;
+		margin-top: 7vw;
 	}
 }
 
@@ -243,12 +244,11 @@ header img{
     left: 290px;
 
 	h1{
-		font-size: 50px;
+		font-size: 2.7vw;
 		font-weight: normal;
 		text-align: center;
-		width: 67%;
-		margin: 130px auto;
-		padding: 0;
+		width: 15vw;
+		margin: 6vw auto;
 	}
 }
 .eighth{
