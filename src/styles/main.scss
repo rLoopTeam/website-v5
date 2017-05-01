@@ -1,0 +1,32 @@
+body{
+	background-color: #04122C;
+	font-family: 'Roboto Slab', sans-serif;
+	color : white;
+	margin:0;
+}
+pre{
+	font-family: 'Roboto Slab', sans-serif !important;
+	margin:0;
+}
+main{
+	
+	height:200vw;
+	background-repeat: no-repeat;
+    background-image: url('#{$imgDir}/background.png');
+    background-size: 100%;
+	//developing pourposes
+	/*
+    background-repeat: no-repeat;
+    background-image: url(../img/test.png);
+    background-size: 105%;
+    background-position: -50px -30px;
+    */
+    
+}
+header{
+	position:absolute;
+}
+
+header img{
+	width:200px;
+}
