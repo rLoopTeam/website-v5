@@ -1,3 +1,48 @@
+#nav {
+
+nav {
+ }
+ 
+ul {
+  margin: 0;
+  padding:0;
+  padding-top:18px;
+  overflow:hidden;
+  width: 100%;
+  list-style: none;
+}
+ 
+li {
+  float: right;
+  margin: 0 10px;
+  font-size: 1.2em;
+}
+ 
+li:last-child {
+  border-right: none;
+}
+ 
+li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+ 
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+ 
+li a:hover {
+  color: #4FDEEF;
+}
+ 
+li.active a {
+  font-weight: bold;
+  color: #4FDEEF;
+}
+
 #landing{
 	.invisible{
 		opacity:0;
