@@ -26,12 +26,14 @@ main{
 header{
 	position:absolute;
 	img{
+		margin:1.3vw;
 		width:10vw;
 	}
 }
 
 footer{
 	display: flex;
+	flex-wr
 	padding:3vw 0 1vw;
 	background: linear-gradient(transparent, darken($bgColor, 7%) 25%);
 	justify-content: space-around;
