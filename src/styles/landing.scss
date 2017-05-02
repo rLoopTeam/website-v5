@@ -2,6 +2,13 @@
 	.invisible{
 		opacity:0;
 	}
+	
+	.button{
+		background-color: rgb(5, 177, 177);
+		border-radius: 5px;
+		color: rgba(255, 255, 255, 0.84);
+		cursor: pointer;		
+	}
 
 
 	.line{
@@ -251,50 +258,27 @@
 			font-style: italic;
 			font-size: 1.4vw;
 	    }
-	    nav{
-	    	margin-top:30px;
-	    	ul{
-				display: flex;
-				justify-content: space-around;
-				margin: 0;
-				list-style: none;
-				padding: 0;
-				width: 100%;
-				.learnBtn{
-					display: flex;
-					align-items: center;
-					text-align: center;
-					width:80px;
-					height:80px;
-					border-radius: 90px;
-					padding:10px;
-					border: 4px solid #9BFFFF;
-					transition: box-shadow 200ms;
-					cursor:pointer;
-					&:hover{
-						box-shadow: 0 0 10px #9BFFFF;
-						&::before{
-							transform: scale(1.4);
-							opacity:1;
-						}
-					}
-					&::before{
-						position: absolute;
-						content: ' ';
-						width: 80px;
-						height: 80px;
-						border-radius: 90px;
-						padding: 10px;
-						border: 1px solid #9BFFFF;
-						z-index: 0;
-						margin-left: -11px;
-						
-						opacity: 0;
-						transition: transform 500ms, opacity 400ms;
-					}
-				}
+	    div{
+	    	.email{
+				background-color: rgb(37, 64, 114);
+				border: none;
+				border-radius: 5px;
+				font-size: 1.3vw;
+				padding: 0.3vw;
+	    	}
+	    	.submit{
+				border: none;
+				font-size: 1.3vw;
+				padding: 0.3vw;
+				margin-left: -1vw;
 	    	}
 	    }
+	    .join{
+    		font-size: 1.3vw;
+			padding: 0.3vw;
+			width:50%;
+			text-align: center;
+    	}
 	}
 	
 }
