@@ -1,5 +1,5 @@
 body{
-	background-color: #04122C;
+	background-color: $bgColor;
 	font-family: 'Roboto Slab', sans-serif;
 	color : white;
 	margin:0;
@@ -25,8 +25,32 @@ main{
 }
 header{
 	position:absolute;
+	img{
+		width:10vw;
+	}
 }
 
-header img{
-	width:200px;
+footer{
+	display: flex;
+	padding:3vw 0 1vw;
+	background: linear-gradient(transparent, darken($bgColor, 7%) 25%);
+	justify-content: space-around;
+	align-items: center;
+	div{
+		text-align:center;
+		h3{
+			margin:0;
+		}
+		img{
+			width: 100px;
+		}
+		p{
+			margin:0;
+		}
+		a{
+			color:white;
+			text-decoration: none;
+			margin:0 10px;
+		}
+	}
 }
