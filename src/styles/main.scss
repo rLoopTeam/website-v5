@@ -33,7 +33,7 @@ header{
 
 footer{
 	display: flex;
-	flex-wr
+	flex-wrap:wrap;
 	padding:3vw 0 1vw;
 	background: linear-gradient(transparent, darken($bgColor, 7%) 25%);
 	justify-content: space-around;

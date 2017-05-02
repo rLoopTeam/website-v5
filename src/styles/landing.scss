@@ -10,6 +10,23 @@
 		cursor: pointer;		
 	}
 
+	.hasOuterCircle::before
+	{
+		position: absolute;
+		content: ' ';
+		border: 4px dashed #06ecec;
+		text-align: center;
+	}
+
+	.hasOuterLines::before
+	{
+		position: absolute;
+		content: ' ';
+		text-align: center;
+		background-image: url('#{$imgDir}/circleEffect.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
 
 	.line{
 		position: absolute;
@@ -132,6 +149,18 @@
 			margin: 1vw 0;
 			font-size: 2vw;
 		}
+
+		&::before{
+			width: 38vw;
+			height: 38vw;
+			border-radius: 38vw;
+			left: -2vw;
+			top: -2vw;
+			animation-name: rotation;
+			animation-duration:70s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+		}
 	}
 
 	.second{
@@ -146,6 +175,18 @@
 			text-align: center;
 			margin: 5vw auto;
 			line-height: 1.8vw;
+		}
+		&::before{
+			width: 19vw;
+			height: 19vw;
+			border-radius: 27vw;
+			left: -0.9vw;
+			top: -0.9vw;
+			animation-name: rotation;
+			animation-duration:90s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+			animation-direction:reverse;
 		}
 	}
 
@@ -165,6 +206,17 @@
 			padding: 0;
 			line-height: 3vw;
 			color:$lineColor;
+		}
+		&::before{
+			width: 23vw;
+			height: 23vw;
+			border-radius: 21vw;
+			left: -1.2vw;
+			top: -1.2vw;
+			animation-name: rotation;
+			animation-duration:60s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
 		}
 	}
 
@@ -229,6 +281,17 @@
 			width: 15vw;
 			margin: 6vw auto;
 			color:$lineColor;
+		}
+		&::before{
+			width: 23vw;
+			height: 23vw;
+			border-radius: 21vw;
+			left: -1.2vw;
+			top: -1.2vw;
+			animation-name: rotation;
+			animation-duration:60s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
 		}
 	}
 
