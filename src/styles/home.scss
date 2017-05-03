@@ -1,4 +1,6 @@
-#landing{
+#home{
+	height:200vw;
+	
 	.invisible{
 		opacity:0;
 	}
@@ -202,7 +204,7 @@
 			font-weight: normal;
 			text-align: center;
 			width: 13vw;
-			margin: 6vw auto;
+			margin: 4vw auto;
 			padding: 0;
 			line-height: 3vw;
 			color:$lineColor;
@@ -263,9 +265,6 @@
 		pre{
 			font-size: 2.7vw;
 			margin-top: 7vw;
-			strong{
-				font-size:3.3vw;
-			}
 		}
 	}
 
