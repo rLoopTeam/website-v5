@@ -84,13 +84,21 @@ var Navigation = (function(Util){
 
 	}
 
+	//scrollReveal triggers only when scrolled after
+	//it has been hidden. Because of this, we scroll
+	//to 0 and 1 alternatively every time we change screen
+	var _last_scroll_pos = 0;
 	function changeView(view){
 		var viewElements = document.querySelectorAll(".view");
 		for(var i = 0; i < viewElements.length; i++){
 			viewElements[i].classList.remove(CONST.ACTIVE_CLASS);
 		}
-		window.scrollTo(1,1);
 		document.getElementById(view).classList.add(CONST.ACTIVE_CLASS);
+		
+		//hack
+		_last_scroll_pos = !_last_scroll_pos;
+		window.scrollTo(0, _last_scroll_pos);
+		
 	}
 
 

@@ -13,15 +13,61 @@ pre{
 }
 
 header{
+    display: flex;
 	position:absolute;
+    width: 100%;
+    z-index:10;
+	
+	background: linear-gradient(black, transparent);
 	img{
+		flex: 0 0;
+		height:3vw;
 		margin:1.3vw;
-		width:10vw;
 	}
+	nav{
+		flex: 0 1 auto;
+		ul{
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			display: flex;
+			justify-content: space-around;
+			li{
+				margin:2vw;
+				a{
+					text-decoration:none;
+					color:white;
+				}
+				&::after{
+					content: ' ';
+					display: block;
+					position: relative;
+
+					width: 0;
+					height: 2px;
+					margin: auto;
+
+					background-color: white;
+					transition: width 500ms;
+					
+				}
+				&:hover::after{
+					width:20%;
+				}
+				&.selected::after{
+					width: 100%;
+				}
+			}
+		}
+	}
+
 }
 
 main{
-	min-height:42vw;
+	//Header spacing
+	padding-top:5vw;
+	position:relative;
+	min-height:37vw;
 	transition: opacity $fadeTime;
 }
 
