@@ -1,4 +1,115 @@
-(function(){
+var Util = (function(){
+	'use strict';
+	var CONST = {
+		FADE_CLASS: "faded",
+		FADE_TIME: 501
+	};
+	var export = {};
+	/*
+	* Faded elements are rendered but not visible (opacity: 0)
+	*/
+	export.fadeOut = function(element, cb){
+		element.classList.add(CONST.FADE_CLASS);
+		setTimeout(function(){
+			if(typeof cb == "function")
+				cb();
+		}, CONST.FADE_TIME);
+	};
+
+	export.fadeIn = function(element, cb){
+		element.classList.remove(CONST.FADE_CLASS);
+		setTimeout(function(){
+			if(typeof cb == "function")
+				cb();
+		}, CONST.FADE_TIME);
+	};
+
+	return export;
+})();
+
+
+//Requires Util
+var Navigation = (function(Util){
+	"use strict";
+	/*
+	* -Views are only visible if in 'active' state
+	*
+	* -add data-bind-view attribute to elements that change state
+	* to 'selected' when a view is 'active'
+	*/
+	var CONST = {
+		SELECTED_CLASS: "selected",
+		ACTIVE_CLASS: "active",
+		DEFAULT_VIEW: "home"
+	};
+
+	var views = {
+		"home": "home",
+		"team": "team",
+	};
+
+
+	//Sets 'selected' class in binded elements
+	function updateBindings(newView){
+		var elements = document.querySelectorAll("[data-bind-view]");
+		for(var i = 0; i < elements.length; i++){
+			if(elements[i].dataset.bindView == newView)
+				elements[i].classList.add(CONST.SELECTED_CLASS);
+			else
+				elements[i].classList.remove(CONST.SELECTED_CLASS);
+		}
+	}
+
+	//Changes the hash, which triggers a route change event
+	function goTo(route){
+		window.location.hash ="/"+route;
+	}
+
+	function onRouteChange(){
+		if(window.location.hash && window.location.hash.indexOf("/") != -1){
+			var route = window.location.hash.slice(window.location.hash.indexOf("/") + 1);
+			if(!!views[route]){
+				updateBindings(route);
+				showView(route);
+			}
+			else{
+				console.warn("View '"+ route +"' doesn't exist."+
+					" Showing default ("+CONST.DEFAULT_VIEW+").");
+				goTo(CONST.DEFAULT_VIEW);
+			}
+		}
+		else{
+			goTo(CONST.DEFAULT_VIEW);
+		}
+
+	}
+
+	function changeView(view){
+		var viewElements = document.querySelectorAll(".view");
+		for(var i = 0; i < viewElements.length; i++){
+			viewElements[i].classList.remove(CONST.ACTIVE_CLASS);
+		}
+		window.scrollTo(1,1);
+		document.getElementById(view).classList.add(CONST.ACTIVE_CLASS);
+	}
+
+
+	function showView(view){
+		var main = document.querySelector("main");
+		Util.fadeOut(main, function(){
+			changeView(view);
+			Util.fadeIn(main);	
+		});
+	}
+	var export = {};
+	export.goTo = goTo;
+	export.onRouteChange = onRouteChange;
+
+	return export;
+})(Util);
+
+//Requires Navigation
+(function(Navigation){
 	"use strict";
 	//How long takes to chanage imagine text
 	var CITY_LOOP_DELAY = 3500;
@@ -143,5 +254,8 @@
 
 	document.addEventListener("DOMContentLoaded", function(){
 		initScrollReveal();
+		window.addEventListener("hashchange", Navigation.onRouteChange);
+		//Set current view
+		Navigation.onRouteChange();
 	});	
-})();
+})(Navigation);

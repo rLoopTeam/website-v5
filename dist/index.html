@@ -25,9 +25,19 @@
 <body>
   <header>
     <img src="assets/img/logo.png"/>
+    <nav>
+      <ul>
+        <li data-bind-view="home">
+          <a href="#/home">Home</a>
+        </li>
+        <li data-bind-view="team">
+          <a href="#/team">The team</a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main>
-    <article id="landing">
+    <article id="home" class="view">
       <div id="firstLine" class="line"></div>
       <div class="circle first hasOuterLines">
         <h1>Imagine...</h1>
@@ -101,6 +111,10 @@ it a reality
           Join the rLoop team
         </a>
       </div>    
+    </article>
+
+    <article id="team" class="view">
+      <h1>Team page</h1>
     </article>
   </main>
   <footer>

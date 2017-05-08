@@ -3,32 +3,26 @@ body{
 	font-family: 'Roboto Slab', sans-serif;
 	color : white;
 	margin:0;
+	background-repeat: no-repeat;
+    background-image: url('#{$imgDir}/background.png');
+    background-size: 100%;
 }
 pre{
 	font-family: 'Roboto Slab', sans-serif !important;
 	margin:0;
 }
-main{
-	
-	height:200vw;
-	background-repeat: no-repeat;
-    background-image: url('#{$imgDir}/background.png');
-    background-size: 100%;
-	//developing pourposes
-	/*
-    background-repeat: no-repeat;
-    background-image: url(../img/test.png);
-    background-size: 105%;
-    background-position: -50px -30px;
-    */
-    
-}
+
 header{
 	position:absolute;
 	img{
 		margin:1.3vw;
 		width:10vw;
 	}
+}
+
+main{
+	min-height:42vw;
+	transition: opacity $fadeTime;
 }
 
 footer{
@@ -54,5 +48,17 @@ footer{
 			text-decoration: none;
 			margin:0 10px;
 		}
+	}
+}
+
+.faded{
+	opacity: 0;
+	transition: opacity $fadeTime;
+}
+
+article.view{
+	display:none;
+	&.active{
+		display:block;
 	}
 }

@@ -1,4 +1,9 @@
-#landing{
+#home{
+	&.active{
+		height:200vw;
+		opacity:1;
+	}
+	
 	.invisible{
 		opacity:0;
 	}
