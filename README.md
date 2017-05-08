@@ -14,12 +14,21 @@ npm install
 
 
 ### Develop
+Make sure that these folders exist:  
+ - src/data
+ - src/fonts
+ - src/images
+ - src/scripts
+ - src/styles
+
+If using windows, we suggest using git bash console to run the scripts.
 
 Use `npm run watch` to compile the dist directory in real time.
 
 Use `npm run serve` to serve `/dist` at `http://localhost:8080`.
 
-
 ### Deploy
+
+Use `npm run dist` to compile the dist directory.
 
 Statically serve dist folder
