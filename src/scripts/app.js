@@ -120,7 +120,7 @@ var Navigation = (function(Util){
 (function(Navigation){
 	"use strict";
 	//How long takes to chanage imagine text
-	var CITY_LOOP_DELAY = 3500;
+	var CITY_LOOP_DELAY = 5000;
 	//Values used in the imagine text
 	var cities =
 	[
