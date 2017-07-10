@@ -20,6 +20,15 @@
     ga('send', 'pageview');
 
   </script>
+  <!--TEMPLATES-->
+  <!--Sponsor template-->
+  <template id="sponsorTemplate">
+    <div class="sponsor">
+      <a href="{link}"><img src="{imageUrl}" alt="{name}"></a>
+      <p>{bio}</p>
+    </div>
+  </template>
+
 </head>
 	
 <body>
@@ -30,8 +39,13 @@
         <li data-bind-view="home">
           <a href="#/home">Home</a>
         </li>
+        <!--
         <li data-bind-view="team">
           <a href="#/team">The team</a>
+        </li>
+        -->
+        <li data-bind-view="sponsors">
+          <a href="#/sponsors">Sponsors</a>
         </li>
       </ul>
     </nav>
@@ -122,6 +136,21 @@ it a reality
     <!-- Team view -->
     <article id="team" class="view">
       <h1>Team page</h1>
+    </article>
+    <!-- Sponsors view -->
+    <article id="sponsors" class="view">
+      <div class="first row">
+      </div>
+      <div class="second row">
+      </div>
+      <div class="third row">
+      </div>
+      <div class="fourth row">
+      </div>
+      <div class="fifth row">
+      </div>
+      <div class="sixth row">
+      </div>
     </article>
   </main>
   <footer>

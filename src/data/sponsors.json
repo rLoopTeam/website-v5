@@ -1,0 +1,93 @@
+[
+    {
+      "name":"TE",
+      "imageUrl":"assets/img/sponsors/TE.png",
+      "bio":"TE Connectivity (NYSE: TEL) is a $12 billion global technology leader. Our connectivity and sensor solutions are essential in today’s increasingly connected world. We collaborate with engineers to transform their concepts into creations – redefining what’s possible using intelligent, efficient and high-performing TE products and solutions proven in harsh environments. Our 72,000 people, including over 7,000 engineers, partner with customers in close to 150 countries across a wide range of industries. We believe EVERY CONNECTION COUNTS – www.TE.com.",
+      "link":"http://www.te.com/",
+      "row":1
+    },
+    {
+      "name":"soylent",
+      "imageUrl":"assets/img/sponsors/soylentlarge.jpg",
+      "bio":"SoylentTM is a pioneer in food technology, delivering nutritionally-complete staple meals that provide all the essential nutrients required to fuel the human body. Soylent is produced with sustainability and efficiency in mind to create a convenient, nutritious, and affordable meal that is better for our health and the environment. CEO/Co- founder Rob Rhinehart, alongside fellow co-founders COO Matt Cauble, CTO John Coogan, and CMO David Renteln, developed Soylent after recognizing the need for a simpler, more efficient food source. The company is headquartered in Los Angeles, CA.",
+      "link":"http://www.soylent.com/",
+      "row":2
+    },
+    {
+      "name":"Autodesk",
+      "imageUrl":"assets/img/sponsors/autodesk.jpg",
+      "bio":"Autodesk builds software for the architecture, engineering, construction, manufacturing, media, and entertainment industries that helps people imagine, design, and create a better world.",
+      "link":"http://www.autodesk.co.uk/",
+      "row":3
+    },
+    {
+      "name":"Slack",
+      "imageUrl":"assets/img/sponsors/slack.png",
+      "bio":"Slack is our backbone. It brings all of our communication together in one place. It's real-time messaging, archiving and search for modern teams",
+      "link":"http://www.slack.com/",
+      "row":4
+    },
+    {
+      "name":"R Systems",
+      "imageUrl":"assets/img/sponsors/rsystem.jpg",
+      "bio":"R Systems, founded in 1993, is a specialized IT Services & Solutions and IT-enabled Services provider catering to a wide range of global customers. We are endowed with some of the industry’s highest quality certifications and standards, including CMMI Level 5, PCMM Level 5, ISO 27001:2013 and ISO 9001:2008. Our IT services and solutions span five major verticals which include Telecom & Digital Media, Banking & Finance, HealthCare, Manufacturing & Logistics, and Government Services.",
+      "link":"http://www.rsystems.com/",
+      "row":4
+    },
+    {
+      "name":"ARX PAX",
+      "imageUrl":"assets/img/sponsors/arxpax.jpg",
+      "bio":"Arx Pax is helping change the way we think about the problems we all face today. From clean water and air, safe and secure homes, buildings and communities, Arx Pax and the MFA technology we develop will improve the quality of life on earth.",
+      "link":"http://arxpax.com/",
+      "row":5
+    },
+    {
+      "name":"ANSYS",
+      "imageUrl":"assets/img/sponsors/ANSYS_logo.png",
+      "bio":"If you’ve ever seen a rocket launch, flown on an airplane, driven a car, used a computer, touched a mobile device, crossed a bridge, or put on wearable technology, chances are you’ve used a product where ANSYS software played a critical role in its creation. ANSYS is the global leader in engineering simulation. We help the world’s most innovative companies deliver radically better products to their customers. By offering the best and broadest portfolio of engineering simulation software, we help them solve the most complex design challenges and engineer products limited only by imagination.",
+      "link":"http://www.ansys.com/",
+      "row":4
+    },
+    {
+      "name":"McNichols",
+      "imageUrl":"assets/img/sponsors/mcnichols.jpg",
+      "bio":"McNICHOLS Company is North America’s leading supplier and fabricator of perforated metal, expanded metal, wire mesh, architectural metals and a variety of gratings products. Founded in 1952 by the late Robert L. McNichols, the company was established on his Christian values, high ethical standards and strong commitment to customer satisfaction. With metals service centers strategically placed from coast-to-coast, McNichols has a dedicated staff and communication network in place that can supply worldwide service.",
+      "link":"http://www.mcnichols.com/",
+      "row":5
+    },
+    {
+      "name":"HyperRPG",
+      "imageUrl":"assets/img/sponsors/hyperrpg.jpg",
+      "bio":"HyperRPG show",
+      "link":"http://www.hyperrpg.com/",
+      "row":5
+    },
+    {
+      "name":"Regalix",
+      "imageUrl":"assets/img/sponsors/regalix-new-logp.png",
+      "bio":"Regalix as a digital marketing company creates value and revenue growth with cutting edge marketing techniques and innovation models.",
+      "link":"http://www.regalix.com/",
+      "row":6
+    },
+    {
+      "name":"IPS",
+      "imageUrl":"assets/img/sponsors/ips_logo.jpg",
+      "bio":"Manufacture, design and development of power supply systems – DC power systems, Inverters, Converters, UPS. Special developments in the field of telecommunications, solar, military.",
+      "link":"http://www.ips-group.net/en",
+      "row":5
+    },
+    {
+      "name":"Coast Metal Cutting",
+      "imageUrl":"assets/img/sponsors/Coastmetal.png",
+      "bio":"COAST METAL CUTTING offers a complete machining and metal cutting service. Their extensive range of equipment allows them to precision cut massive to miniature parts. Their areas of expertise include, but not limiting to: BAR, TUBING or PLATE-STRIP CUTOFF, PRECISION BAR CUTOFF, PLATE CUTTING, and PRECISION ABRASIVE CUTTING AND CHOP-SAWING.",
+      "link":"http://www.coastmetal.com/",
+      "row":6
+    },
+    {
+      "name":"Talla",
+      "imageUrl":"assets/img/sponsors/talla.png",
+      "bio":"Talla is your Service Assistant, bringing an A.I.-powered service desk to HR, IT, and other internal service teams.",
+      "link":"http://www.talla.com/",
+      "row":6
+    }
+]

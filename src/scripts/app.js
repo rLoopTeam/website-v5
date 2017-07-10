@@ -16,6 +16,48 @@ var Util = (function(){
 		}, CONST.FADE_TIME);
 	};
 
+
+	/* 
+	* Given a template id, replaces '{key}' with 'data.key'
+	* and returns a clone
+	*/
+	export.inflateWith = function(templateId, data){
+		var element = document.getElementById(templateId);
+		var clone = element.cloneNode(true);
+		clone.innerHTML = clone.innerHTML.replace(/\{(.+?)\}/g, function(full, label) { 
+			return data[label]==null ?  "" : data[label];
+		});
+
+		return document.importNode(clone.content, true);
+	};
+
+	/*
+	* Loads a file asynchronously
+	* if succesfull calls cb(response), 
+	* else calls cberr(statusText)
+	*/
+	export.loadFile = function (sURL, cb, cberr) {
+		var oReq = new XMLHttpRequest();
+		oReq.onload = function(){
+			if (this.readyState === 4) {
+				if (this.status === 200) {
+					if(typeof cb == "function")
+						cb(this.responseText);
+				} else {
+					if(typeof cb == "function")
+						cberr(this.statusText);
+				}
+			}
+		};
+		oReq.onerror = function(){
+			if(typeof cb == "function")
+				cberr(this.statusText);
+		};
+		oReq.open("GET", sURL, true);
+		oReq.timeout = CONST.REQ_TIMEOUT;
+		oReq.send(null);
+	};
+
 	export.fadeIn = function(element, cb){
 		element.classList.remove(CONST.FADE_CLASS);
 		setTimeout(function(){
@@ -40,12 +82,43 @@ var Navigation = (function(Util){
 	var CONST = {
 		SELECTED_CLASS: "selected",
 		ACTIVE_CLASS: "active",
-		DEFAULT_VIEW: "home"
+		DEFAULT_VIEW: "home",
+		ROW_CLASSES:[
+			"first",
+			"second",
+			"third",
+			"fourth",
+			"fifth",
+			"sixth"
+		]
 	};
 
 	var views = {
 		"home": "home",
 		"team": "team",
+		"sponsors": "sponsors",
+	};
+
+	//preShow has been executed on a view (key)
+	var _initializedViews =[];
+
+	//These functions are called before showView (only if defined)
+	//This function is called only the first time visiting that route
+	//Load async data / init view here
+	//Call finished when ended 
+	var preShowHooks = {
+		sponsors: function(finished){
+			Util.loadFile("assets/data/sponsors.json", function(data){
+				var sponsors = JSON.parse(data);
+				sponsors.forEach(function(sponsor){
+					var element = Util.inflateWith("sponsorTemplate",sponsor);
+					document.querySelector("#sponsors ."+CONST.ROW_CLASSES[sponsor.row-1])
+						.appendChild(element);
+				});
+				finished();	
+			});
+			
+		}
 	};
 
 
@@ -65,12 +138,29 @@ var Navigation = (function(Util){
 		window.location.hash ="/"+route;
 	}
 
+	function preShowView(route){
+		if(_initializedViews[route])
+			showView(route);
+		else
+		{
+			preShowHooks[route](function(){
+				showView(route);
+				_initializedViews[route] = true;
+			});
+			
+		}
+	}
+
 	function onRouteChange(){
 		if(window.location.hash && window.location.hash.indexOf("/") != -1){
 			var route = window.location.hash.slice(window.location.hash.indexOf("/") + 1);
 			if(!!views[route]){
 				updateBindings(route);
-				showView(route);
+				//If pre initizalization defined
+				if(preShowHooks[route])
+					preShowView(route);
+				else
+					showView(route);	
 			}
 			else{
 				console.warn("View '"+ route +"' doesn't exist."+
@@ -158,7 +248,7 @@ var Navigation = (function(Util){
 		  duration:1000
 		});
 
-		sr.reveal('.first',{
+		sr.reveal('#home .first',{
 			delay: 2000,
 			beforeReveal:function(){
 				setTimeout(function(){
@@ -174,7 +264,7 @@ var Navigation = (function(Util){
 				}, 600);	
 			}
 		});
-		sr.reveal('.second', {
+		sr.reveal('#home .second', {
 			delay: 4500,
 			beforeReveal:function(){
 				setTimeout(function(){
@@ -189,10 +279,10 @@ var Navigation = (function(Util){
 				}, 2000);
 			}
 		});
-		sr.reveal('.third', {
+		sr.reveal('#home .third', {
 			viewFactor: 0.2
 		});
-		sr.reveal('.fourth', {
+		sr.reveal('#home .fourth', {
 			delay: 500,
 			beforeReveal: function(){
 				document.getElementById("fourthLine").classList.add("expand");
@@ -203,24 +293,24 @@ var Navigation = (function(Util){
 				}, 2000);
 			}
 		});
-		sr.reveal('.fifth', {
+		sr.reveal('#home .fifth', {
 			delay:1000,
 			viewFactor: 0.5,
 			beforeReveal: function(){
 				document.getElementById("fifthLine").classList.add("expand");
 			}
 		});
-		sr.reveal('.sixth',{
+		sr.reveal('#home .sixth',{
 			viewFactor: 0.2
 		});
-		sr.reveal('.seventh',{
+		sr.reveal('#home .seventh',{
 			viewFactor: 0.5,
 			delay:1000,
 			beforeReveal:function(){
 				document.getElementById("seventhLine").classList.add("expand");	
 			}
 		});
-		sr.reveal('.eighth', {
+		sr.reveal('#home .eighth', {
 			viewFactor: 0.5,
 			delay: 2000,
 			beforeReveal: function(){
@@ -228,7 +318,7 @@ var Navigation = (function(Util){
 				document.getElementById("ninethLine").classList.add("expand");
 			}
 		});
-		sr.reveal('.conclusion',{
+		sr.reveal('#home .conclusion',{
 			viewFactor:0.5,
 			delay:3000
 		});
