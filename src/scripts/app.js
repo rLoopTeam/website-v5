@@ -215,7 +215,7 @@ var Navigation = (function(Util){
 	var cities =
 	[
 		{
-			from: "Sweden",
+			from: "Stockholm",
 			to: "Oslo",
 			in: "30 mins"
 		},
