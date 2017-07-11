@@ -23,7 +23,7 @@
     {
       "name":"Slack",
       "imageUrl":"assets/img/sponsors/slack.png",
-      "bio":"Slack is our backbone. It brings all of our communication together in one place. It's real-time messaging, archiving and search for modern teams",
+      "bio":"Slack is our backbone. It brings all of our communication together in one place. It's real-time messaging, archiving and search for modern teams.",
       "link":"http://www.slack.com/",
       "row":4
     },
@@ -37,49 +37,49 @@
     {
       "name":"ARX PAX",
       "imageUrl":"assets/img/sponsors/arxpax.png",
-      "bio":"Arx Pax is helping change the way we think about the problems we all face today. From clean water and air, safe and secure homes, buildings and communities, Arx Pax and the MFA technology we develop will improve the quality of life on earth.",
+      "bio":"Arx Pax invented the patented Magnetic Field Architecture (MFA) technology, a more efficient way to transmit electromagnetic energy. Strategic applications of MFA technology and the use of MFA-based hover engines include structural isolation, recreation and entertainment, industrial automation, and transportation.",
       "link":"http://arxpax.com/",
       "row":5
     },
     {
       "name":"ANSYS",
       "imageUrl":"assets/img/sponsors/ANSYS_logo.png",
-      "bio":"If you’ve ever seen a rocket launch, flown on an airplane, driven a car, used a computer, touched a mobile device, crossed a bridge, or put on wearable technology, chances are you’ve used a product where ANSYS software played a critical role in its creation. ANSYS is the global leader in engineering simulation. We help the world’s most innovative companies deliver radically better products to their customers. By offering the best and broadest portfolio of engineering simulation software, we help them solve the most complex design challenges and engineer products limited only by imagination.",
+      "bio":"ANSYS is pioneering the development and application of simulation methods to solve challenging product engineering problems, helping the world’s most innovative companies deliver radically better products to their customers.",
       "link":"http://www.ansys.com/",
       "row":4
     },
     {
       "name":"McNichols",
       "imageUrl":"assets/img/sponsors/mcnichols.png",
-      "bio":"McNICHOLS Company is North America’s leading supplier and fabricator of perforated metal, expanded metal, wire mesh, architectural metals and a variety of gratings products. Founded in 1952 by the late Robert L. McNichols, the company was established on his Christian values, high ethical standards and strong commitment to customer satisfaction. With metals service centers strategically placed from coast-to-coast, McNichols has a dedicated staff and communication network in place that can supply worldwide service.",
+      "bio":"McNICHOLS Company is North America’s leading supplier and fabricator of perforated metal, expanded metal, wire mesh, architectural metals and a variety of gratings products.",
       "link":"http://www.mcnichols.com/",
-      "row":5
+      "row":6
     },
     {
       "name":"HyperRPG",
       "imageUrl":"assets/img/sponsors/hyperrpg22.png",
-      "bio":"HyperRPG show",
+      "bio":"HyperRPG pushes the boundaries of collaborative storytelling and shared gaming experiences across the web and around the world, striving for inclusive content and representation.",
       "link":"http://www.hyperrpg.com/",
       "row":5
     },
     {
       "name":"Regalix",
       "imageUrl":"assets/img/sponsors/regalix-new-logp.png",
-      "bio":"Regalix as a digital marketing company creates value and revenue growth with cutting edge marketing techniques and innovation models.",
+      "bio":"Regalix is a digital marketing company that creates value and revenue growth with cutting edge marketing techniques and innovation models.",
       "link":"http://www.regalix.com/",
       "row":6
     },
     {
       "name":"IPS",
       "imageUrl":"assets/img/sponsors/ips_logo.png",
-      "bio":"Manufacture, design and development of power supply systems – DC power systems, Inverters, Converters, UPS. Special developments in the field of telecommunications, solar, military.",
+      "bio":"IPS (International Power Supply) is a 27 years experienced company specializing in the R&D and manufacturing of power electronics and energy conversion technologies.",
       "link":"http://www.ips-group.net/en",
       "row":5
     },
     {
       "name":"Coast Metal Cutting",
       "imageUrl":"assets/img/sponsors/Coastmetal2.png",
-      "bio":"COAST METAL CUTTING offers a complete machining and metal cutting service. Their extensive range of equipment allows them to precision cut massive to miniature parts. Their areas of expertise include, but not limiting to: BAR, TUBING or PLATE-STRIP CUTOFF, PRECISION BAR CUTOFF, PLATE CUTTING, and PRECISION ABRASIVE CUTTING AND CHOP-SAWING.",
+      "bio":"Coast Metal offers a complete machining and metal cutting service. Their extensive range of equipment allows them to precision cut massive to miniature parts.",
       "link":"http://www.coastmetal.com/",
       "row":6
     },
@@ -88,6 +88,6 @@
       "imageUrl":"assets/img/sponsors/talla.png",
       "bio":"Talla is your Service Assistant, bringing an A.I.-powered service desk to HR, IT, and other internal service teams.",
       "link":"http://www.talla.com/",
-      "row":6
+      "row":5
     }
 ]
