@@ -322,6 +322,9 @@ var Navigation = (function(Util){
 			viewFactor:0.5,
 			delay:3000
 		});
+		sr.reveal('#sponsors .row', {
+			viewFactor:0.4
+		});
 	}
 
 	function initCityLoop(){
@@ -355,5 +358,8 @@ var Navigation = (function(Util){
 		window.addEventListener("hashchange", Navigation.onRouteChange);
 		//Set current view
 		Navigation.onRouteChange();
+		setTimeout(function(){
+			window.scrollTo(0, 2);
+		},100);
 	});	
 })(Navigation);

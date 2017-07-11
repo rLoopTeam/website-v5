@@ -3,12 +3,13 @@
 		display:flex;
 		justify-content:center;
 		text-align:center;
+		align-items:baseline;
 		.sponsor{
 			margin:10px;
 			padding:10px;
 			flex:1 1 auto;
 			img{
-				width:100%;
+				max-width:100%;
 			}
 		}
 	}
@@ -42,6 +43,7 @@
 		.sponsor{
 			max-width:400px;
 			img{
+				max-height:200px;
 				max-width:300px;
 			}	
 		}
@@ -50,6 +52,7 @@
 		.sponsor{
 			max-width:300px;
 			img{
+				max-height:200px;
 				max-width:300px;
 			}	
 		}
@@ -58,6 +61,7 @@
 		.sponsor{
 			max-width:300px;
 			img{
+				max-height:200px;
 				max-width:300px;
 			}	
 		}
