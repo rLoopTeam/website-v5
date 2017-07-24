@@ -1,5 +1,8 @@
 #home{
-	height:200vw;
+	&.active{
+		height:200vw;
+		opacity:1;
+	}
 	
 	.invisible{
 		opacity:0;
@@ -86,7 +89,7 @@
 		left: 24.5vw;
 		transform: rotateZ(30deg);
 		&.expand{
-			height: 4vw;
+			height: 4.1vw;
 		}
 	}
 
@@ -204,7 +207,7 @@
 			font-weight: normal;
 			text-align: center;
 			width: 13vw;
-			margin: 4vw auto;
+			margin: 7.1vw auto;
 			padding: 0;
 			line-height: 3vw;
 			color:$lineColor;
@@ -265,6 +268,9 @@
 		pre{
 			font-size: 2.7vw;
 			margin-top: 7vw;
+			strong{
+				font-size:3.3vw;
+			}
 		}
 	}
 
@@ -304,9 +310,11 @@
 		top: 150vw;
 		right: 11.5vw;
 		overflow: hidden;
+		background-color: white;
 		img{
-			margin:-3px;
-			width:101%;
+			height: 85%;
+			margin-left: -6vw;
+			margin-top: 4vw;
 		}
 	}
 

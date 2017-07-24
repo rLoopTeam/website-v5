@@ -3,32 +3,72 @@ body{
 	font-family: 'Roboto Slab', sans-serif;
 	color : white;
 	margin:0;
+	background-repeat: no-repeat;
+    background-image: url('#{$imgDir}/background.png');
+    background-size: 100%;
 }
 pre{
 	font-family: 'Roboto Slab', sans-serif !important;
 	margin:0;
 }
-main{
-	
-	height:200vw;
-	background-repeat: no-repeat;
-    background-image: url('#{$imgDir}/background.png');
-    background-size: 100%;
-	//developing pourposes
-	/*
-    background-repeat: no-repeat;
-    background-image: url(../img/test.png);
-    background-size: 105%;
-    background-position: -50px -30px;
-    */
-    
-}
+
 header{
+    display: flex;
 	position:absolute;
+    width: 100%;
+    z-index:10;
+	
+	background: linear-gradient(black, transparent);
 	img{
+		flex: 0 0;
+		height:3vw;
 		margin:1.3vw;
-		width:10vw;
 	}
+	nav{
+		flex: 0 1 auto;
+		ul{
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			display: flex;
+			justify-content: space-around;
+			li{
+				margin:2vw;
+				a{
+					text-decoration:none;
+					color:white;
+				}
+				&::after{
+					content: ' ';
+					display: block;
+					position: relative;
+
+					width: 0;
+					height: 2px;
+					margin: auto;
+
+					background-color: white;
+					transition: width 500ms;
+					
+				}
+				&:hover::after{
+					width:20%;
+				}
+				&.selected::after{
+					width: 100%;
+				}
+			}
+		}
+	}
+
+}
+
+main{
+	//Header spacing
+	padding-top:5vw;
+	position:relative;
+	min-height:37vw;
+	transition: opacity $fadeTime;
 }
 
 footer{
@@ -54,5 +94,17 @@ footer{
 			text-decoration: none;
 			margin:0 10px;
 		}
+	}
+}
+
+.faded{
+	opacity: 0;
+	transition: opacity $fadeTime;
+}
+
+article.view{
+	display:none;
+	&.active{
+		display:block;
 	}
 }
