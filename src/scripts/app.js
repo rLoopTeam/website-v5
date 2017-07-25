@@ -141,6 +141,18 @@ var Navigation = (function(Util){
 				finished();	
 			});
 			
+		},
+		team: function(finished){
+			Util.loadFile("assets/data/members.json", function(data){
+				var members = JSON.parse(data);
+				members.forEach(function(member){
+					var element = Util.inflateWith("memberTemplate", member);
+					document.querySelector("#team .container")
+						.appendChild(element);
+				});
+				finished();	
+			});
+			
 		}
 	};
 
