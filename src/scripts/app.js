@@ -115,6 +115,7 @@ var Navigation = (function(Util){
 				var sponsors = JSON.parse(data);
 				sponsors.forEach(function(sponsor){
 					var element = Util.inflateWith("sponsorTemplate",sponsor);
+
 					document.querySelector("#sponsors ."+CONST.ROW_CLASSES[sponsor.row-1])
 						.appendChild(element);
 				});
