@@ -1,6 +1,55 @@
 #team{
-	&.active{
-		height:30vw;
-		opacity:1;
+	.container{
+		display: flex;
+		margin: 100px;
+		flex-wrap: wrap;
+		justify-content: center;
+		.member{
+			text-align: center;
+			margin: 15px 40px;
+			flex: 0 0 $memberCardWidth;
+			overflow: hidden;
+			border-radius: 10px;
+			position: relative;
+			background-color:rgba(255,255,255,0.3);
+			&::before{
+				content: " ";
+				width: $memberCardWidth;
+				height: 70px;
+				background-color: white;
+				display: block;
+				position: absolute;
+				z-index: -1;
+			}
+			img{
+				margin-top:10px;
+				border-radius:50px;
+				box-shadow: 0 3px 10px 3px rgba(0,0,0,0.2);
+			}
+			.info{
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				height: 130px;
+				padding-bottom:10px;
+
+				h1, h2, h3{
+					padding:0;
+					margin:0;
+				}
+				h1{
+					font-size: 20px;
+				}
+				h2{
+					font-size: 15px;
+				}
+				h3{
+					font-size: 12px;
+					color: rgba(190, 190, 190, 0.8);
+				}
+
+			}
+
+		}
 	}
 }

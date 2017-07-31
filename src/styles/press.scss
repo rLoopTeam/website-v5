@@ -1,0 +1,35 @@
+#press{
+	.container{
+		display: flex;
+		margin: 100px;
+		flex-wrap: wrap;
+		justify-content: center;
+		.report{
+			border: 2px solid white;
+			flex: 1 1 500px;
+			margin:20px;
+			padding:10px;
+			background-color: rgba(255,255,255,0.2);
+			a{
+				display:flex;
+				text-decoration: none;
+				align-items:center;
+				color:white;
+				.logo{
+					border: thin solid white;
+					flex: 0 0 150px;
+					height: 150px;
+					background-color: rgba(255,255,255,0.4);
+					margin:20px;
+					overflow:hidden;
+					display:flex;
+					align-items:center;
+					img{
+						width:100%;
+					}
+				}
+			}
+		}
+	}
+
+}

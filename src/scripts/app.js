@@ -97,6 +97,9 @@ var Navigation = (function(Util){
 		"home": "home",
 		"team": "team",
 		"sponsors": "sponsors",
+		"press": "press",
+		"team": "team",
+		"about": "about"
 	};
 
 	//preShow has been executed on a view (key)
@@ -112,7 +115,40 @@ var Navigation = (function(Util){
 				var sponsors = JSON.parse(data);
 				sponsors.forEach(function(sponsor){
 					var element = Util.inflateWith("sponsorTemplate",sponsor);
+
 					document.querySelector("#sponsors ."+CONST.ROW_CLASSES[sponsor.row-1])
+						.appendChild(element);
+				});
+				finished();	
+			});
+			
+		},
+		press: function(finished){
+			Util.loadFile("assets/data/press.json", function(data){
+				var reports = JSON.parse(data);
+				reports.forEach(function(reportrow){
+					//var row = document.createElement("div");
+					//row.classList.add("row");
+					reportrow.forEach(function(report){
+						var element = Util.inflateWith("reportTemplate",report);
+						//row.appendChild(element);
+						document.querySelector("#press .container")
+							.appendChild(element);	
+					});
+					
+					//document.querySelector("#press .container")
+					//	.appendChild(row);
+				});
+				finished();	
+			});
+			
+		},
+		team: function(finished){
+			Util.loadFile("assets/data/members.json", function(data){
+				var members = JSON.parse(data);
+				members.forEach(function(member){
+					var element = Util.inflateWith("memberTemplate", member);
+					document.querySelector("#team .container")
 						.appendChild(element);
 				});
 				finished();	
