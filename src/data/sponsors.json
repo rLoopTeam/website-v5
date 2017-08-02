@@ -7,6 +7,13 @@
       "row":1
     },
     {
+      "name":"Digi-Key",
+      "imageUrl":"assets/img/sponsors/digikey.png",
+      "bio":"Digi-Key is the fourth largest electronic component distributor in North America, and fifth largest in the world. Digi-Key serves design engineers and the prototyping market, as well as an expanding role in supplying production quantities for OEMs and contract manufacturers.",
+      "link":"https://www.digikey.com",
+      "row":2
+    },
+    {
       "name":"soylent",
       "imageUrl":"assets/img/sponsors/soylentlarge.jpg",
       "bio":"Soylent™ is a pioneer in food technology, producing healthy, functional foods that are good for the body and the planet. Soylent is produced with sustainability and efficiency in mind to create a convenient, nutritious, and affordable meal that is better for our health and the environment.",
