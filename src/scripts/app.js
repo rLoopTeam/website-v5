@@ -243,7 +243,7 @@ var Navigation = (function(Util){
 })(Util);
 
 //Requires Navigation
-(function(Navigation){
+(function(Navigation, Util){
 	"use strict";
 	//How long takes to chanage imagine text
 	var CITY_LOOP_DELAY = 5000;
@@ -397,5 +397,14 @@ var Navigation = (function(Util){
 		setTimeout(function(){
 			window.scrollTo(0, 2);
 		},100);
+
+
+		//newsletter prompt
+		document.getElementById("closeNewsletter").addEventListener("click",function(){
+			Util.fadeOut(document.getElementById("newsletterPrompt"));
+		});
+		setTimeout(function(){
+			Util.fadeIn(document.getElementById("newsletterPrompt"));
+		}, 5000);
 	});	
-})(Navigation);
+})(Navigation, Util);

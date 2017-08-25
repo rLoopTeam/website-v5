@@ -8,7 +8,7 @@
     "watch": "npm-run-all --parallel serve dist watch:*",
     "serve": "http-server dist",
     "predist": "npm run clean",
-    "notify-update":"notify -t 'rLoop' -m 'Dist updated' -s",
+    "notify-update": "notify -t 'rLoop' -m 'Dist updated' -s",
     "dist:fonts": "cp -R src/fonts dist/assets/",
     "dist:data": "cp -R src/data dist/assets/",
     "dist:styles": "npm-run-all -p scss:* && postcss -u autoprefixer -r dist/assets/css/*",
