@@ -401,7 +401,11 @@ var Navigation = (function(Util){
 
 		//newsletter prompt
 		document.getElementById("closeNewsletter").addEventListener("click",function(){
-			Util.fadeOut(document.getElementById("newsletterPrompt"));
+			Util.fadeOut(document.getElementById("newsletterPrompt"), function(){
+				var nlElement = document.getElementById("newsletterPrompt");				
+				nlElement.parentElement.removeChild(nlElement);
+			});
+
 		});
 		setTimeout(function(){
 			Util.fadeIn(document.getElementById("newsletterPrompt"));
