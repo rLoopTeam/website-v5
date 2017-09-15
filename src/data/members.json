@@ -11,7 +11,7 @@
   { "name":"David Corrigan", "title": "Electrical Team", "location": "USA", "imageUrl": "assets/img/members/david.jpg" },
   { "name":"Lachlan Grogan", "title": "Avionics Lead", "location": "Australia", "imageUrl": "assets/img/members/lachlan_grogan.png" },
   { "name":"Oluwatobi Oyinlola", "title": "Avionics", "location": "Nigeria", "imageUrl": "assets/img/members/oluwatobi.png" },
-  { "name":"PR Team", "title": "PR Lead", "location": "USA", "imageUrl": "assets/img/members/rbe.png" },
+  { "name":"Richard Behiel", "title": "PR Lead", "location": "USA", "imageUrl": "assets/img/members/rbe.png" },
   { "name":"Rebecca Zhuo", "title": "PR Team", "location": "USA", "imageUrl": "assets/img/members/rebecca.jpg" },
   { "name":"Matthew Marshall", "title": "Finance Lead", "location": "Canada", "imageUrl": "assets/img/members/matthew_marshall.png" },
   { "name":"Gregory Georgianna", "title": "Video Lead", "location": "USA", "imageUrl": "assets/img/members/gregory_video.jpg" },
@@ -36,5 +36,6 @@
   { "name":"Kevin Miller", "title": "Aerodynamics/Mechanical", "location": "USA", "imageUrl": "assets/img/members/kevin_miller.png" },
   { "name":"Clarence Akagu", "title": "Mechanical/Manufacturing", "location": "Nigeria", "imageUrl": "assets/img/members/clarence_akagu.png" },
   { "name":"Michael Elmore", "title": "Numerical Simulation", "location": "USA", "imageUrl": "assets/img/members/michael_elmore.png" },
-  { "name":"Nick Pope", "title": "Manufacturing", "location": "USA", "imageUrl": "assets/img/members/nick_pope.png" }
+  { "name":"Nick Pope", "title": "Manufacturing", "location": "USA", "imageUrl": "assets/img/members/nick_pope.png" },
+  { "name":"Gerard del Castillo", "title": "Frontend Developer", "location":"Spain", "imageUrl": "assets/img/members/gdcl.jpg"}
 ]
